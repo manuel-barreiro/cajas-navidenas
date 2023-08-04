@@ -1,0 +1,704 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0%;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.wpp a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+html {
+  font-size: 62.5%;
+}
+.contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 2vh 20% 2vh 13%;
+  position: fixed;
+  background-color: rgb(39, 39, 39);
+  height: 4vh;
+  z-index: 10;
+  color: rgb(211, 211, 211);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.contacto div {
+  padding: 0 2%;
+}
+#mail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#mail img {
+  height: 40px;
+  width: auto;
+  padding-right: 0.5vw;
+}
+
+#numero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+
+#numero img {
+  height: 3.5vh;
+  width: auto;
+  padding-right: 0.5vw;
+}
+
+#boton:hover,
+.wpp:hover,
+.phone:hover {
+  box-shadow: 0px 15px 20px rgba(19, 20, 20, 0.6);
+  color: #fff;
+  transform: translateY(-7px);
+  transition: transform 400ms ease, border 300ms ease-in-out;
+}
+
+button:active {
+  transform: translateY(-1px);
+}
+/* NAV */
+nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  margin-top: 4vh;
+  padding: 3vh 5% 3vh 5%;
+  width: 100%;
+  background-color: white;
+  z-index: 10;
+  box-shadow: 0px 7px 7px rgba(19, 20, 20, 0.6);
+}
+.arial {
+  font-family: Arial, Helvetica, sans-serif, sans-serif;
+  font-weight: 1000;
+}
+
+.monbold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.mon {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+.latobol {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+}
+nav h1 {
+  font-size: 4rem;
+  color: black;
+}
+.links li {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+nav ul {
+  display: flex;
+
+  justify-content: space-around;
+  width: 60%;
+  min-width: 500px;
+  font-size: 1.9rem;
+  align-items: center;
+}
+nav ul button {
+  color: black;
+  text-decoration: none;
+}
+#boton,
+#presupuesto {
+  background-color: rgb(250, 192, 18);
+  line-height: 90%;
+  padding: 0.5% 2.1rem 0.5% 4%;
+  text-align: center;
+  border-radius: 14px;
+  color: white;
+  font-size: 1.9rem;
+  font-weight: 400;
+  line-height: 2rem;
+  min-height: fit-content;
+  min-width: fit-content;
+}
+
+.burger div {
+  height: 3px;
+  width: 25px;
+  margin: 5px;
+  background-color: black;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.toggle .line2 {
+  opacity: 0;
+}
+
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+/* main */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: fit-content;
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+.glide__slide {
+  position: relative;
+}
+.carousel-container img {
+  width: 99vw;
+  height: auto;
+}
+
+.textoCar {
+  position: absolute;
+
+  display: flex;
+  flex-direction: column;
+  top: 55%;
+  left: 42%;
+}
+.textoCar h3 {
+  font-size: 4.8rem;
+  color: white;
+  padding-bottom: 2vw;
+}
+.textoCar h4 {
+  font-size: 2rem;
+  color: rgb(250, 192, 18);
+  line-height: 3rem;
+}
+li span {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 300px;
+  height: 80px;
+  top: 52%;
+
+  border: solid rgb(195, 194, 191) 2px;
+  color: black;
+  background-color: rgba(195, 194, 191, 0.8);
+  font-size: 2.4rem;
+}
+li span button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 2rem;
+  margin: auto;
+  text-align: center;
+  align-self: center;
+}
+.scrollDown {
+  z-index: 3;
+  position: absolute;
+  top: 75%;
+  left: 48%;
+}
+.scrollDown img {
+  height: 7vh;
+  width: auto;
+  border-radius: 100%;
+  background-color: rgba(195, 194, 191, 0.5);
+}
+main {
+  padding-top: 14vh;
+}
+
+.productos {
+  grid-area: two;
+}
+#img1 {
+  grid-area: three;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#img1 img {
+  width: 80%;
+}
+#img2 {
+  grid-area: four;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#img2 img {
+  width: 80%;
+}
+#wppform {
+  grid-area: five;
+
+  padding-top: 10vh;
+}
+.cajaverde {
+  grid-area: six;
+}
+.cajaroja {
+  grid-area: seven;
+}
+.quienes {
+  grid-area: eight;
+}
+.ofrecemos {
+  grid-area: nine;
+}
+.llegamos {
+  grid-area: ten;
+}
+video {
+  width: 100%;
+  padding-bottom: 2vh;
+  max-width: 100%;
+}
+.llegamos img {
+  width: 90%;
+  height: auto;
+}
+.empresas {
+  padding-top: 10vh;
+  grid-area: eleven;
+  padding-right: 2vw;
+}
+
+.consumidores {
+  padding-top: 10vh;
+  grid-area: twelve;
+  padding-right: 2vw;
+}
+.grid1 {
+  display: grid;
+  grid-template-columns: 24% 41.5% 41.5%;
+  grid-template-rows: fit-content fit-content;
+  grid-template-areas:
+    "two three four"
+    "five six seven";
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: 49% 49%;
+  grid-template-rows: fit-content;
+  grid-template-areas: "eight nine";
+}
+
+.grid3 {
+  display: grid;
+  grid-template-columns: 49% 24% 24%;
+  grid-template-areas: "ten eleven twelve";
+}
+
+.infoppal {
+  padding: 5% 8vw 5% 8vw;
+}
+.productos {
+  padding-bottom: 10%;
+}
+.productos ul {
+  height: 65%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  font-size: 1.8rem;
+  color: rgb(135, 134, 127);
+}
+.productos ul li::before {
+  content: "\2022";
+  color: black;
+  font-weight: bold;
+  display: inline-block;
+  width: -2rem;
+  margin-left: 0em;
+  font-size: 2rem;
+  margin-right: 0.3em;
+}
+
+.linea1 {
+  height: 2.5px;
+  width: 75px;
+  margin: 5px;
+  margin-left: 0;
+  background-color: rgb(251, 205, 66);
+}
+
+.linea2 {
+  height: 3px;
+  width: 37.5px;
+  margin: 5px;
+  margin-bottom: 30px;
+  margin-left: 0;
+  background-color: rgb(251, 205, 66);
+}
+
+h4 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+}
+.scrollDown button {
+  background-color: transparent;
+}
+.wpp {
+  display: flex;
+  font-size: 1.6rem;
+  color: white;
+  background-color: rgb(41, 167, 26);
+  width: clamp(140px, 85%, 85%);
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+.wpp img {
+  height: 30px;
+  margin-left: 5px;
+}
+.phone {
+  font-size: 2.4rem;
+  width: clamp(140px, 85%, 85%);
+  padding: 13px;
+  margin-top: 1vh;
+  color: white;
+  border-radius: 20px;
+  background-color: black;
+  align-self: center;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.phone button {
+  text-align: center;
+}
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+h5 {
+  font-size: 2rem;
+  padding-bottom: 2vh;
+  font-weight: 400;
+}
+.contenidoCaja {
+  line-height: 2rem;
+  font-size: 1.6rem;
+  color: rgb(135, 134, 127);
+}
+p {
+  font-size: 1.6rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  color: grey;
+}
+.quienes {
+  padding-top: 5vh;
+}
+.quienes img {
+  padding-bottom: 2vh;
+  width: 80%;
+  height: auto;
+}
+.ofrecemos {
+  padding-top: 5vh;
+}
+
+.slider-cont {
+  overflow: hidden;
+  width: 100vw;
+  height: 84vh;
+}
+.slider {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+h6 {
+  font-size: 2rem;
+  padding-bottom: 2vh;
+}
+
+/* ------------------ EMPRESAST -------------------- */
+
+.empresasT h4 {
+  font-size: 3.2rem;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  margin-top: 12vh;
+  margin-bottom: 12vh;
+}
+
+.empresasT img {
+  height: 70px;
+  width: auto;
+}
+#pilares {
+  height: 80px;
+}
+#maxi{
+  height: 65px;
+
+}
+.gridImg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 100%;
+  justify-items: center;
+}
+/* ------------------------- FOOOTER ------------------ */
+footer {
+  height: 5vh;
+  background-color: rgb(39, 39, 39);
+  color: rgb(211, 211, 211);
+  display: flex;
+  align-items: center;
+}
+footer span {
+  padding-left: 8vw;
+  font-size: 1.4rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+@media (max-width: 760px) {
+  body {
+    overflow-x: hidden;
+  }
+  .links {
+    min-width: 0;
+  }
+  nav h1 {
+    font-size: 2rem;
+  }
+  .links {
+    position: absolute;
+    right: 0;
+    top: 10vh;
+    height: 90vh;
+    padding-bottom: 10vh;
+    background-color: white;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in;
+    box-shadow: 0px 7px 7px rgba(19, 20, 20, 0.6);
+    align-content: center;
+    font-size: 1.8rem;
+  }
+  .links li {
+    opacity: 0;
+    align-self: center;
+    font-size: 1.6rem;
+  }
+  .burger {
+    display: block;
+  }
+  .scrollDown {
+    display: none;
+  }
+  .contacto {
+    padding: 2vh 5% 2vh 3%;
+  }
+  #presupuesto {
+    padding: 5px 6px 5px 15px;
+  }
+  .textoCar {
+    position: absolute;
+    width: 50vw;
+    top: 60%;
+    left: 33vw;
+  }
+  .carousel-container {
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+  }
+  .carousel-container img {
+    width: 99vw;
+    margin: auto;
+  }
+
+  section h5 {
+    padding-top: 10px;
+  }
+  .textoCar h3 {
+    font-size: 3rem;
+    color: white;
+    padding-bottom: 2vw;
+  }
+  .textoCar h4 {
+    font-size: 1.6rem;
+  }
+  .textoCar span {
+    border: solid white 2px;
+    background-color: white;
+    opacity: 0.8;
+    width: fit-content;
+    color: black;
+    font-size: 1.4rem;
+  }
+  li span {
+    width: 250px;
+    font-size: 1.5rem;
+    border-radius: 20px;
+    background-color: rgba(195, 194, 191, 1);
+    height: fit-content;
+  }
+  .textoCar span button {
+    padding: 1rem 1rem;
+  }
+
+  .grid1 {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    row-gap: 2rem;
+    grid-template-areas:
+      "two"
+      "three"
+      "six"
+      "four"
+      "seven"
+      "five";
+  }
+  #img1,
+  #img2 {
+    display: flex;
+    justify-content: center;
+    width: clamp(80%, 80%, 300px);
+  }
+  #wppform {
+    margin: auto;
+    padding-top: 0;
+  }
+  .wpp {
+    text-align: center;
+  }
+  .phone {
+    margin: 2vh 0 2vh 0;
+  }
+  .grid2 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 3rem;
+    grid-template-areas:
+      "eight"
+      "nine";
+  }
+  .grid3 {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    row-gap: 3rem;
+    grid-template-areas:
+      "ten"
+      "eleven"
+      "twelve";
+  }
+  .llegamos img {
+    width: 100%;
+    height: auto;
+  }
+  .ofrecemos {
+    padding-bottom: 20px;
+  }
+  .consumidores,
+  .empresas {
+    padding-top: 3vh;
+  }
+  #mail {
+    justify-content: flex-start;
+  }
+  #mail img {
+    height: 30px;
+  }
+  .gridImg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100%;
+    justify-items: center;
+  }
+  .empresasT {
+    min-height: 450px;
+  }
+  .empresasT img {
+    height: 60px;
+    width: auto;
+  }
+  #pilares {
+    height: 70px;
+  }
+  #maxi{
+    height: 55px;
+  
+  }
+}
+.nav-active {
+  transform: translateX(0%);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translatex(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes one {
+  100% {
+    transform: rotate(360deg);
+  }
+}
