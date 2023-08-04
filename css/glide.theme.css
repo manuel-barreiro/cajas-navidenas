@@ -1,4 +1,6 @@
-.glide__arrow {
+/* descomentar lo de abajo para mostrar flechas */
+
+/* .glide__arrow {
   position: absolute;
   display: block;
   top: 40%;
@@ -17,7 +19,7 @@
   transform: translateY(-10%);
   line-height: 1;
   font-size: 2rem;
-}
+} */
 .glide__arrow:focus {
   outline: none;
 }
